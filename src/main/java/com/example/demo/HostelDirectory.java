@@ -5,6 +5,7 @@ import javax.persistence.Id;
 
 @Entity
 public class HostelDirectory {
+	
 	@Id
 	private int roomNo;
 	private int sid;

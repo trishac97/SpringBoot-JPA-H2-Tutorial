@@ -26,10 +26,13 @@ public class Hostel {
 	}
 	
 	@RequestMapping("findRoom")
-	public String findRoom(@RequestParam String roomNo) {
-		ModelAndView mv = new ModelAndView("findRoom");
+	public ModelAndView findRoom(@RequestParam int roomNo) {
 		
-		repoobj.findAllById(roomNo);
-		return "home.jsp";
+		ModelAndView mv = new ModelAndView("home.jsp");
+		
+		HostelDirectory hostelDirectory = repoobj.findById(roomNo).orElse(new HostelDirectory());
+		System.out.println(hostelDirectory.getsName());
+		mv.addObject(hostelDirectory);
+		return mv;
 	}
 }

@@ -7,6 +7,6 @@
 <title>Hostel Management System</title>
 </head>
 <body>
-Helooooo
+Student at room ${hostelDirectory}
 </body>
 </html>

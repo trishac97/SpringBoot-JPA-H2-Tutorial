@@ -36,6 +36,10 @@ public class HostelDirectory {
 	public void setsCity(String sCity) {
 		this.sCity = sCity;
 	}
+	@Override
+	public String toString() {
+		return "HostelDirectory [roomNo=" + roomNo + ", sid=" + sid + ", sName=" + sName + ", sCity=" + sCity + "]";
+	}
 	
 	
 }

@@ -7,6 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-Hi, 
+<form action="/findRoom">
+  <label for="roomNo">Room No:</label><br>
+  <input type="roomNo" id="roomNo" name="roomNo" value="John"><br>
+
+  <input type="submit" value="Submit">
 </body>
 </html>
